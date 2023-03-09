@@ -1,5 +1,9 @@
-public class Factorial {
+public class RecursionPrac {
 
+    public static int fibFunc(int n){
+        if(n <= 1){return n;}
+        return fibFunc(n - 1)  + fibFunc(n - 2);
+    }
     public static int factorialfunc(int n){
         if(n <= 0 ){
             return 1;
@@ -8,6 +12,7 @@ public class Factorial {
     }
     public static void main(String[] args){
         System.out.println(factorialfunc(4));
+        System.out.println(fibFunc(9));
     }
     
 }
