@@ -1,7 +1,7 @@
 public class RecursionPrac {
 
     public static int fibFunc(int n){
-        if(n <= 1){return n;}
+        if(n <= 1){return n;} 
         return fibFunc(n - 1)  + fibFunc(n - 2);
     }
     public static int factorialfunc(int n){
