@@ -25,4 +25,23 @@ public class Stack {
     public boolean isEmpty(){
         return (top == -1);
     }
+
+    public boolean isFull(){
+        return (top == maxSize - 1);
+    }
+
+    public static void main(String[] args){
+        Stack theStack = new Stack(10);
+        theStack.push(20);
+        theStack.push(40);
+        theStack.push(60);
+        theStack.push(80);
+
+        while(!theStack.isEmpty()){
+            long value = theStack.pop();
+            System.out.print(value);
+            System.out.print(" ");
+        }
+        System.out.println("");
+    }
 }
