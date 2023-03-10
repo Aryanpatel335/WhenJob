@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Stack {
     //push pop peek
     private int maxSize;
@@ -35,13 +37,25 @@ public class Stack {
         theStack.push(20);
         theStack.push(40);
         theStack.push(60);
+        System.out.println(Arrays.toString(theStack.stackArray));
+
+        theStack.pop();
+        System.out.println(Arrays.toString(theStack.stackArray));
+        
         theStack.push(80);
+        System.out.println(Arrays.toString(theStack.stackArray));
+        theStack.pop();
+        theStack.pop();
+
+
 
         while(!theStack.isEmpty()){
             long value = theStack.pop();
             System.out.print(value);
             System.out.print(" ");
         }
+
         System.out.println("");
+        System.out.println(Arrays.toString(theStack.stackArray));
     }
 }
