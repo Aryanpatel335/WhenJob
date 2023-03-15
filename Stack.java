@@ -54,7 +54,7 @@ public class Stack {
             System.out.print(value);
             System.out.print(" ");
         }
-
+        //added this to see the array after the stack is empty
         System.out.println("");
         System.out.println(Arrays.toString(theStack.stackArray));
     }
