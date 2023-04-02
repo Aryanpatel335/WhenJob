@@ -1,5 +1,5 @@
 package Medium;
-import java.util.*;
+// import java.util.*;
 public class PairsOfSongs {
 
     //brute force implementation
