@@ -26,7 +26,7 @@ public class InserteDeleteGetRand {
 
         if(map.containsKey(val)) return false;
         
-        list.add(val);
+        list.add(list.size(), val);
         map.put(val, list.size());
 
         return true;
