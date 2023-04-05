@@ -28,7 +28,6 @@ public class GenerateParentheses {
             backTrack(ans, curr, open, closed + 1, max);
             curr.deleteCharAt(curr.length()-1);
         }
-
         
     }
     
