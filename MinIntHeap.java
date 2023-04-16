@@ -3,3 +3,6 @@ public class MinIntHeap {
     private int size = 0;
     
 }
+ 
+
+//min heap and max heap
