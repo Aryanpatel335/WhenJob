@@ -20,6 +20,22 @@ public class LeetCodeEasy {
         return -1;
     }
 
+    public int lastStoneWeight(int[] stones){
+        PriorityQueue<Integer> pqHeap = new PriorityQueue<Integer>(Comparator.reverseOrder());
 
+        for(int stone: stones){
+            pqHeap.add(stone);
+        }
+
+        while(pqHeap.size() > 1){
+            int x = pqHeap.remove();
+            int y = pqHeap.remove();
+
+            if(x != y){
+                pqHeap.add(x-y);
+            }
+        }
+        return pqHeap.isEmpty() ? 0 : pqHeap.peek();
+    }
     
 }
