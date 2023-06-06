@@ -1,4 +1,3 @@
-package Medium;
 import java.util.LinkedHashMap;
 
 public class LRUCache extends LinkedHashMap<Integer,Integer> {

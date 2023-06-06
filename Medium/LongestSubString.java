@@ -1,4 +1,3 @@
-package Medium;
 import java.util.*;
 public class LongestSubString {
     public int lengthOfLongestSubString(String s){

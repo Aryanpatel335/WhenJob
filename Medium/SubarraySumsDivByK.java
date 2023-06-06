@@ -1,4 +1,4 @@
-package Medium;
+
 
 public class SubarraySumsDivByK {
     public int subarraysDivByK(int[] nums, int k){
