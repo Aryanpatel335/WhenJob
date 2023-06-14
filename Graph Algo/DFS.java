@@ -2,9 +2,9 @@
 import java.util.*;
 
 public class DFS {
-    private LinkedList<Integer> adjLists[];
+    private LinkedList<Integer>[] adjLists;
     
-    private boolean visited[];
+    private boolean[] visited;
 
     DFS(int vertices){
         adjLists = new LinkedList[vertices];
