@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class LeetCodeEasy {
+    
 
 
     //leetcode 387. First Unique Character in a String
@@ -36,6 +37,13 @@ public class LeetCodeEasy {
             }
         }
         return pqHeap.isEmpty() ? 0 : pqHeap.peek();
+    }
+
+    public static void main(String[] args){
+        LeetCodeEasy l = new LeetCodeEasy();
+        int[] stones = {2,7,4,1,8,1};
+        l.lastStoneWeight(stones);
+    
     }
     
 }
